@@ -1,0 +1,13 @@
+# Normalise line endings in the repository to LF so that builds and CI behave
+# identically on Windows, macOS and Linux.
+* text=auto eol=lf
+
+*.py    text diff=python
+*.md    text
+*.yml   text
+*.toml  text
+
+# Windows-only artefacts, if ever committed, must stay binary
+*.wav   binary
+*.exe   binary
+*.png   binary

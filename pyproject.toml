@@ -1,0 +1,24 @@
+# Ruff configuration.
+# Kept separate from packaging metadata: this project ships a single script,
+# not an installable package.
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # import sorting
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+]
+
+ignore = [
+    "E501",  # line length is enforced by the formatter, not the linter
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]  # sys.path bootstrap must precede the project import
