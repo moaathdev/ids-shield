@@ -93,7 +93,7 @@ thread and the housekeeping thread cannot corrupt each other.
 ## Usage
 
 ```bash
-git clone https://github.com/gghhjjll/ids-shield.git
+git clone https://github.com/moaathdev/ids-shield.git
 cd ids-shield
 ```
 
